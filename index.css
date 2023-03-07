@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container {
+    width: 600px;
+}
+
+header {
+    background-image: url(images/andre-tan-THJJRUhNlEc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top -180px;
+    color: #FFFFFF;
+}
+
+.header-container {
+    background-color: #0E0E0E;
+    opacity: 0.8;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.header-container p,
+.header-container a {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.search-container {
+    position: absolute;
+    top: 175px;
+    left: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+input {
+    background-color: #2E2E2F;
+    color: #A5A5A5;
+    padding: 13px 9px;
+    width: 342px;
+    font-family: 'Inter', sans-serif;
+    height: 38px;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    background-color: #4B4B4B;
+    border: none;
+    color: #FFFFFF;
+    padding: 13px 9px;
+    height: 38px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+main {
+    background-color: #121212;
+    color: #2E2E2F;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    overflow: scroll;
+}
+
+.fa-film {
+    font-size: 5.5em;
+}
+
+.film-container {
+    width: 85%;
+    margin: 20px 20px;
+}
+
+.film {
+    color: #fff;
+    display: flex;
+    margin-top: 10px;
+}
+
+.film-title {
+    display: flex;
+    margin: 5px 0;
+}
+
+.film-details {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 18px;
+    font-size: 12px;
+}
+
+.film-row {
+    display: flex;
+    justify-content: start;
+    margin: 10px 0;
+}
+
+.film-row p {
+    margin-right: 18px;
+}
+
+.fa-circle-plus {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.poster {
+    width: 99px;
+    height: 147px;
+}
+
+h3 {
+    font-size: 20px;
+}
+h3, p {
+    margin: 0 5px;
+}
