@@ -79,11 +79,19 @@ main {
     font-size: 5.5em;
 }
 
-.film-container {
+#film-container {
     width: 85%;
-    margin: 20px 20px;
+    margin: 20px;
+    height: 100%;
 }
 
+#empty-search {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 .film {
     color: #fff;
     display: flex;
@@ -127,4 +135,9 @@ h3 {
 }
 h3, p {
     margin: 0 5px;
+}
+
+.white {
+    color: #FFFFFF;
+    margin-top: 3px;
 }
