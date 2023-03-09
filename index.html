@@ -10,22 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>Film Wishlist</title>
+    <title>Film Watchlist</title>
 </head>
 
 <body>
     <div class="main-container">
         <header>
             <div class="header-container">
-                <h1>My Wishist</h1>
-                <a href="/index.html">Find Your Film</a>
+                <h1>Find Your Film</h1>
+                <p id="watch-list">My Wishist</p>
             </div>
         </header>
+        <div class="search-container">
+            <input type="search" id="search-input">
+            <button id="search">Search</button>
+        </div>
         <main>
             <div id="film-container">
                 <div id="empty-search">
-                    <p>Your wishlist is looking a little empty...</p>
-                    <p class="white"><a href="ind"><i class="fa-solid fa-circle-plus"></a></i>Lets add some movies</p>
+                    <i class="fa-solid fa-film"></i>
+                    <p>Start Exploring</p>
                 </div>
 
             </div>
