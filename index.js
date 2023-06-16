@@ -18,7 +18,7 @@ async function renderWatchList() {
             </div>
             <div class="film-details">
                 <div class="film-title" data-imdbID="${data.imdbID}"> 
-                    <h3>${data.Title}</h3>
+                    <h3>${d }</h3>
                     <p>⭐ ${data.Ratings[0].Value}<p>
                 </div>
                 <div class="film-row"> 
@@ -41,7 +41,6 @@ async function renderSearchResults() {
     const searchValue = getSearchInput.value.split(' ').join('+')
     const getSearch = await fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=8fc6c297`)
     const data = await getSearch.json()
-    console.log(data)
     for (let movie of data.Search) {
         const fetchFilms = await fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=8fc6c297`) 
         const data = await fetchFilms.json()
@@ -73,5 +72,14 @@ async function renderSearchResults() {
     }))
 }
 
+function keyDownTextField (e) {
+    const keyCode = e.keyCode;
+
+    if(keyCode==13) {
+        renderSearchResults()
+    }
+}
+
 getMyWatchList.addEventListener('click', renderWatchList)
 getSearchButton.addEventListener('click', renderSearchResults)
+addEventListener('keydown', keyDownTextField, false )
