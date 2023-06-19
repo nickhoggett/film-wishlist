@@ -14,3 +14,6 @@ It then return an array of the top 10 movies and displays them to the page the f
   - plot description
 
 The option is then available for each movie to be added to a watchlist.
+
+This project has been uploaded to Netlify and can be viewed here:
+https://visionary-cheesecake-98a714.netlify.app/
