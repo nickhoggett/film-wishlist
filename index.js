@@ -6,12 +6,10 @@ let filmList = document.getElementById('film-container')
 let watchlist = []
 
 async function renderWatchList() {
-
     filmList.innerHTML = ''
     for (let id of watchlist) {
         const getWatchList = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=8fc6c297`)
         const data = await getWatchList.json()
-        console.log(data)
         filmList.innerHTML += `
         <div class="film">
             <div class="film-poster">
@@ -25,7 +23,7 @@ async function renderWatchList() {
                 <div class="film-row"> 
                     <p>${data.Runtime}</p>
                     <p>${data.Genre}</p>
-                    <p><i class="fa-solid fa-circle-plus add-wishlist" data-imdbID="${data.imdbID}"></i>Watchlist</p>                  
+                    <p><i class="fa-solid fa-circle-minus add-wishlist" data-imdbID="${data.imdbID}"></i>Watchlist</p>                  
                 </div>
                 <p>${data.Plot}</p>
             </div>               

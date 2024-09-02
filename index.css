@@ -1,11 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;   
+    background-color: #121212;
 }
 
 .main-container {
     width: 600px;
+    margin: 0 auto;
 }
 
 header {
@@ -28,15 +30,15 @@ header {
 
 
 .header-container p,
-.header-container a {
+.header-container h1 {
     color: #FFFFFF;
     opacity: 1;
 }
 
 .search-container {
     position: absolute;
-    top: 175px;
-    left: 70px;
+    top: 167px;
+    left: 400px;
 }
 
 a {
@@ -72,7 +74,6 @@ main {
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    overflow: scroll;
 }
 
 .fa-film {
@@ -92,6 +93,7 @@ main {
     justify-content: center;
     height: 100%;
 }
+
 .film {
     color: #fff;
     display: flex;
@@ -120,7 +122,8 @@ main {
     margin-right: 18px;
 }
 
-.fa-circle-plus {
+.fa-circle-plus,
+.fa-circle-minus {
     margin-right: 5px;
     cursor: pointer;
 }
@@ -140,4 +143,8 @@ h3, p {
 .white {
     color: #FFFFFF;
     margin-top: 3px;
+}
+
+#watch-list {
+    cursor: pointer;
 }
